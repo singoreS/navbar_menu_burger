@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="icon" type="image/jpg" href="http://example.com/img/A.jpg" sizes="">
+    <link rel="stylesheet" href="C:\Users\utilisateur\Desktop\NAVBAR\assets\css\navbar.css" />
+    <script src="https://kit.fontawesome.com/1f1f4c0bc7.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- fais apparaitre une pop up (fenetre) ex: site pour plus de 18 ans -->
+    <script>
+      alert("rouge")
+    </script>
+
+    <nav class="navbar">
+      <a href="#" class="logo">CIEL</a>
+      <div class="nav-link">
+        <ul>
+            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <img src="../NAVBAR/assets/img/bars-solid.svg" alt="menu hamburger" class="burger">
+
+    </nav>
+
+    <header></header>
+  </body>
+  <script>
+    const burger = document.querySelector(".burger")
+    const navLink = document.querySelector(".nav-link")
+
+    burger.addEventListener('click',()=>{
+    navLink.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
